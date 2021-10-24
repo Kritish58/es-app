@@ -1,0 +1,53 @@
+.form {
+   margin: auto;
+   padding: 10px;
+   label {
+      display: block;
+      text-align: left;
+      color: rgba(75, 85, 99);
+   }
+   textarea {
+      border: solid 1px #aaa;
+      border: none;
+      background-color: #f8f8f8;
+      padding: 8px;
+      border-radius: 4px;
+      width: 100%;
+      &:focus {
+         background-color: #f2f2f2;
+      }
+   }
+   input {
+      border: none;
+      background-color: #f8f8f8;
+      padding: 8px;
+      border-radius: 4px;
+      width: 100%;
+      &:focus {
+         background-color: #f2f2f2;
+      }
+   }
+   button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0px;
+      border: none;
+      font-size: 1rem;
+      font-family: 'Ruslan Display', cursive;
+      background-color: rgba(16, 185, 129);
+      color: white;
+
+      &:active {
+         background-color: rgba(5, 150, 105);
+      }
+   }
+
+   .error {
+      color: rgba(239, 68, 68);
+      display: block;
+      text-align: left;
+   }
+   .inputSection {
+      margin: 20px 0px;
+   }
+}

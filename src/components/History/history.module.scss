@@ -1,0 +1,42 @@
+@import '../../styles/variables';
+.header {
+   display: flex;
+   justify-content: space-between;
+   margin: 10px 0px;
+   background-color: $secondaryColor;
+   border-radius: 4px;
+
+   small {
+      flex: 1;
+      padding: 4px;
+      color: white;
+   }
+}
+
+.section {
+   width: 100%;
+   margin: 20px auto;
+
+   .date {
+      display: flex;
+      justify-content: end;
+      font-size: 10px;
+   }
+   a {
+      text-decoration: none;
+      color: #444;
+   }
+   .data {
+      display: flex;
+      justify-content: space-between;
+      background-color: rgba(243, 244, 246);
+      border-radius: 4px;
+      padding: 8px 0px;
+      text-decoration: none;
+
+      span {
+         flex: 1;
+         font-size: 12px;
+      }
+   }
+}

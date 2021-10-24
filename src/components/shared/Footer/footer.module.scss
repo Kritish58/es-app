@@ -1,0 +1,36 @@
+.footerContainer {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   bottom: 0;
+   max-width: 800px;
+   font-family: cursive;
+   padding: 8px;
+   background-color: white;
+
+   section {
+      a {
+         text-decoration: none;
+         padding: 8px;
+         border-radius: 4px 4px 0px 0px;
+         color: #444;
+         //  font-family: cursive;
+         font-size: 0.8rem;
+      }
+
+      .entryActive {
+         background-color: rgba(59, 130, 246);
+         color: white;
+      }
+      .detailsActive {
+         background-color: rgba(59, 130, 246);
+         color: white;
+      }
+      .historyActive {
+         background-color: rgba(59, 130, 246);
+         color: white;
+      }
+   }
+}

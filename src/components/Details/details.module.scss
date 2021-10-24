@@ -1,0 +1,61 @@
+@import '../../styles/_variables.scss';
+
+.date {
+   font-family: 'Play', sans-serif;
+   color: rgba(75, 85, 99);
+}
+
+.mainContainer {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 20px 0px;
+   section {
+      border-radius: 4px;
+      padding: 8px;
+      flex: 1;
+      margin: 10px;
+      h4 {
+         font-family: 'play', 'sans-serif';
+      }
+      h2 {
+         font-family: 'Play', 'sans-serif';
+      }
+   }
+   .productsSold {
+      background-color: $primaryBg;
+      h4 {
+         color: $primaryColor;
+      }
+      h2 {
+         color: $primaryColor;
+      }
+   }
+
+   .purchasePrice {
+      background-color: $secondaryBg;
+      h4 {
+         color: $secondaryColor;
+      }
+      h2 {
+         color: $secondaryColor;
+      }
+   }
+   .markedPrice {
+      background-color: $warningBg;
+      h4 {
+         color: $warningColor;
+      }
+      h2 {
+         color: $warningColor;
+      }
+   }
+   .profits {
+      background-color: $successBg;
+      h4 {
+         color: $successColor;
+      }
+      h2 {
+         color: $successColor;
+      }
+   }
+}
