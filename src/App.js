@@ -18,7 +18,7 @@ function App() {
                <Route component={Entry} path="/" exact />
                <Route component={Details} path="/details" />
                <Route component={History} path="/history" exact />
-               <Route component={Record} path="/history/:record_id" />
+               <Route component={Record} path="/history/daily-record" />
             </Switch>
          </div>
       </Router>
