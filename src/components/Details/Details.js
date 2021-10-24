@@ -28,22 +28,22 @@ function Details() {
             <main className={styles.mainContainer}>
                <section className={styles.productsSold}>
                   <h4>Products sold</h4>
-                  <h2>{record.prodsSold}</h2>
+                  <h2>{record.prodsSold || 0}</h2>
                </section>
 
                <section className={styles.purchasePrice}>
                   <h4>Purchase Price</h4>
-                  <h2>Rs. {record.purchasedPrice}</h2>
+                  <h2>Rs. {record.purchasedPrice || 0}</h2>
                </section>
 
                <section className={styles.markedPrice}>
                   <h4>Marked Price</h4>
-                  <h2>Rs. {record.markedPrice}</h2>
+                  <h2>Rs. {record.markedPrice || 0}</h2>
                </section>
 
                <section className={styles.profits}>
                   <h4>Profits</h4>
-                  <h2>Rs. {record.markedPrice - record.purchasedPrice}</h2>
+                  <h2>Rs. {record.markedPrice - record.purchasedPrice || 0}</h2>
                </section>
             </main>
          </div>

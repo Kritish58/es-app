@@ -13,7 +13,7 @@ function getTodaysRecord() {
 
    //*  today's record
    const today = moment(new Date()).format('YYYY-MM-DD');
-   const data = groups[today].map((record) => {
+   const data = groups[today]?.map((record) => {
       return {
          productName: record.productName,
          quantity: parseInt(record.quantity, 10),
@@ -24,13 +24,13 @@ function getTodaysRecord() {
    });
 
    const obj = {
-      prodsSold: data.reduce((acc, currentValue) => {
+      prodsSold: data?.reduce((acc, currentValue) => {
          return acc + currentValue.quantity;
       }, 0),
-      purchasedPrice: data.reduce((acc, currentValue) => {
+      purchasedPrice: data?.reduce((acc, currentValue) => {
          return acc + currentValue.quantity * currentValue.purchasedPrice;
       }, 0),
-      markedPrice: data.reduce((acc, currentValue) => {
+      markedPrice: data?.reduce((acc, currentValue) => {
          return acc + currentValue.markedPrice * currentValue.quantity;
       }, 0),
    };
