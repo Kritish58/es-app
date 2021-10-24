@@ -18,6 +18,7 @@ function Record() {
 
    useEffect(() => {
       const dt = getDayRecord();
+      dt[1] = dt[1].reverse();
       setData(dt);
       return () => {};
    }, []);
@@ -27,10 +28,10 @@ function Record() {
          <Header title="Record" />
          <img onClick={handleGoBack} className={styles.goBackImage} src={arrowImg} alt="goback" />
          <small className={styles.entries}>
-            {data[1]?.length} entries ({moment(data?.[1]?.[0]?.createdAt).format('MMMM Do YYYY')})
+            {data?.[1]?.length} entries ({moment(data?.[1]?.[0]?.createdAt).format('MMMM Do YYYY')})
          </small>
          <main className={styles.main}>
-            {data[1]?.map((record, i) => {
+            {data?.[1]?.map((record, i) => {
                return (
                   <section key={i}>
                      <div className={styles.record}>
