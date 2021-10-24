@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
-import addRecord from '../../utils/addRecors';
+import addRecord from '../../utils/addRecord';
 import Footer from '../shared/Footer';
 import Header from '../shared/Header';
 
