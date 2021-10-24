@@ -7,34 +7,35 @@
       top: 4px;
       left: 20px;
    }
+   .entries {
+      color: #666;
+   }
    .main {
       display: flex;
       flex-direction: column;
-      padding: 10px;
+      padding: 10px 10px 40px 10px;
       margin: 10px auto;
-      .date {
-         text-align: right;
-         margin-bottom: 20px;
-      }
-      .record {
-         background-color: rgba(243, 244, 246);
-         flex: 1;
-         display: flex;
-         justify-content: center;
-         border-bottom: solid 1px #ddd;
-         padding: 4px;
-         margin: 6px 0px;
-         border-radius: 4px 4px 0px 0px;
+      section {
+         margin: 10px 0px;
+         .record {
+            background-color: rgba(243, 244, 246);
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            border-bottom: solid 1px #ddd;
+            padding: 4px;
+            border-radius: 4px 4px 0px 0px;
 
-         .label {
-            flex: 2;
-            text-align: left;
-            padding: 4px;
-         }
-         .value {
-            flex: 2;
-            text-align: left;
-            padding: 4px;
+            .label {
+               flex: 2;
+               text-align: left;
+               padding: 4px;
+            }
+            .value {
+               flex: 2;
+               text-align: left;
+               padding: 4px;
+            }
          }
       }
    }
