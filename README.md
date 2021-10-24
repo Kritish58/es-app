@@ -1,5 +1,5 @@
 # DEMO
-https://nostalgic-ride-af7de5.netlify.app/history
+https://nostalgic-ride-af7de5.netlify.app
 
 # Getting Started with Create React App
 
