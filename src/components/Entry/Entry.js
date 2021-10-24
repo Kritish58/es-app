@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
+import addRecord from '../../utils/addRecors';
 import Footer from '../shared/Footer';
 import Header from '../shared/Header';
 
@@ -16,6 +17,9 @@ function Entry() {
 
    const onSubmit = (data) => {
       console.log(data);
+
+      addRecord(data);
+
       notify();
       reset();
    };

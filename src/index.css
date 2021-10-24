@@ -15,21 +15,21 @@ body {
 }
 
 label {
-   /* font-family: 'Play', sans-serif; */
-   font-family: cursive;
+   font-family: 'Play', sans-serif;
+   /* font-family: cursive; */
 }
 
 button {
-   /* font-family: 'Play', sans-serif; */
-   font-family: cursive;
+   font-family: 'Play', sans-serif;
+   /* font-family: cursive; */
 }
 input {
-   /* font-family: 'Play', sans-serif; */
-   font-family: cursive;
+   font-family: 'Play', sans-serif;
+   /* font-family: cursive; */
 }
 textarea {
-   /* font-family: 'Play', sans-serif; */
-   font-family: cursive;
+   font-family: 'Play', sans-serif;
+   /* font-family: cursive; */
 }
 
 code {
